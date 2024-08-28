@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+header {
+    text-align: left;
+}
+
+.logo span {
+    width: 100%;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.input-section, .output-section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    font-size: 1.1rem;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.info-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #7D7D7D; /* Color de la información */
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 24px;
+    margin-right: 24px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 1rem;
+    flex: 1;
+    text-align: center;
+}
+
+button.copy-button {
+    background-color: #999;
+    margin-top: 20px;
+}
+
+button:disabled {
+    background-color: #CCC;
+    cursor: not-allowed;
+}
+
+.output-container {
+    text-align: center;
+    padding: 10px;
+    background-color: #F3F5FC;
+    border-radius: 10px;
+    min-height: 150px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#outputImage {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+#outputText {
+    font-size: 1.2rem;
+    color: #003366;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
+
+    .input-section, .output-section {
+        width: 45%;
+    }
+
+    .buttons {
+        justify-content: flex-start;
+    }
+
+    button {
+        margin-right: 10px;
+        flex: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo span {
+        width: 40%;
+    }
+
+    textarea {
+        height: 120px;
+        font-size: 1rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

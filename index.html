@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="/img/Logo.png" alt="Logo anura" id="outputImage">
+            </div>
+        </header>
+        
+        <main>
+            <div class="input-section">
+                <textarea id="inputText" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="info-text">
+                    <p>⚠️ Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <button onclick="encrypt()">Encriptar</button>
+                    <button onclick="decrypt()">Desencriptar</button>
+                </div>
+            </div>
+            <div class="output-section">
+                <div class="output-container">
+                    <img src="/img/mockup.png" alt="Hombre con diamante" id="outputImage">
+                    <p id="outputText">Ningún mensaje fue encontrado</p>
+                    <button class="copy-button" onclick="copyText()">Copiar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
